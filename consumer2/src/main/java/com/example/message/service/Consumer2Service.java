@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 public class Consumer2Service {
 
     @StreamListener(Sink.INPUT)
-    public void rec(Object payload){
-        log.info("接受到的消息：{}",payload.toString());
+    public void rec(Object payload) {
+        log.info("接受到的消息：{}", payload.toString());
     }
 }

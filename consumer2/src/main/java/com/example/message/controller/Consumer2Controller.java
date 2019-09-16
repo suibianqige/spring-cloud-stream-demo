@@ -15,7 +15,7 @@ import java.util.Date;
 @RestController
 public class Consumer2Controller {
 
-    @RequestMapping(value = "sayHello",method = RequestMethod.GET)
+    @RequestMapping(value = "sayHello", method = RequestMethod.GET)
     public String sayHello() {
         return "hello:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
     }
